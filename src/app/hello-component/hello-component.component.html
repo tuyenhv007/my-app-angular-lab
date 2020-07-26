@@ -1,0 +1,46 @@
+<h3>ComponentToView</h3>
+<h3>Họ tên: {{ user.name }}</h3>
+<p>Tuổi: {{ user.age }}</p>
+<p>Tình trạng hôn nhân: {{ isMarried ? "Đã kết hôn" : "Còn độc thân" }}</p>
+<h2>{{ showInfo() }}</h2>
+<img src="{{ imgLink }}" alt="" width="200">
+<a href="{{ link }}">{{  textLink }}</a>
+<hr>
+<h1>Property Binding</h1>
+<img [src]="imgLink" alt=""[width]="imgWidth">
+<input type="text" class="form-control" [value]="name">
+<button
+  type="button"
+  class="btn btn-primary"
+  [disabled]="isValid"
+>Đăng nhập</button>
+<hr>
+<table [attr.border]="tbBorder" [attr.width]="tbWidth">
+  <tr>
+    <td>ID</td>
+    <td>Ho Ten</td>
+    <td>SDT</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Vu Van Su</td>
+    <td>0123456789</td>
+  </tr>
+</table>
+<hr>
+<h2>Class Binding</h2>
+<table [class.table-bordered]="isBorder">
+  <tr>
+    <td>ID</td>
+    <td>Ho Ten</td>
+    <td>SDT</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Vu Van Su</td>
+    <td>0123456789</td>
+  </tr>
+</table>
+<span class="label" [class.label]="isChecked === 1">Label</span>
+
+
